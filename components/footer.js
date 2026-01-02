@@ -1,15 +1,19 @@
+import Link from "next/link";
+
 export default function Footer() {
     return (
         <>
             <footer className="text-gray-600 body-font">
                 <div className="bg-gray-100">
                     <div className="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
-                    <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" className="w-10 h-10 text-white p-2 bg-green-500 rounded-full">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
-                    </svg>
-                        <span className="ml-3 text-xl">김믿음 포트폴리오</span>
-                    </a>
+                    <Link href="/">
+                        <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" className="w-10 h-10 text-white p-2 bg-green-500 rounded-full">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
+                        </svg>
+                            <span className="ml-3 text-xl">김믿음 포트폴리오</span>
+                        </a>
+                    </Link>
                     <p className="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">© 2020 Tailblocks —
                         <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" className="text-gray-600 ml-1" target="_blank">@knyttneve</a>
                     </p>
