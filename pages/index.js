@@ -1,10 +1,11 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Layout from '../components/layout'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <Layout>
       <Head>
         <title>김믿음 포트폴리오</title>
         <meta name="description" content="김믿음 포트폴리오" />
@@ -12,6 +13,6 @@ export default function Home() {
       </Head>
       
       <h1>홈 입니다</h1>
-    </div>
+    </Layout>
   )
 }
