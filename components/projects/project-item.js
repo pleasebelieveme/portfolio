@@ -10,16 +10,10 @@ export default function ProjectItem({data}) {
     const end = data.properties.WorkPeriod.date.end;
 
     const calculatedPeriod = (start, end) => {
-        const startDateStringArray = start.split('-');
-        const endDateStringArray = end.split('-');
-
-        var startDate = new Date(startDateStringArray[0], startDateStringArray[1], startDateStringArray[2]);
-        var endDate = new Date(endDateStringArray[0], endDateStringArray[1], endDateStringArray[2]);
-
+        const startDate = new Date(start);
+        const endDate = new Date(end);
         const diffInMs = Math.abs(endDate - startDate);
-        const result = diffInMs / (1000 * 60 * 60 * 24);
-
-        return result;
+        return Math.ceil(diffInMs / (1000 * 60 * 60 * 24));
     };
 
     return (
@@ -28,8 +22,8 @@ export default function ProjectItem({data}) {
                 className="rounded-t-xl"
                 src={imgSrc}
                 alt="cover image"
-                width="100%"
-                height="60%"
+                width={100}
+                height={60}
                 layout="responsive"
                 objectFit="cover"
                 quality={100}

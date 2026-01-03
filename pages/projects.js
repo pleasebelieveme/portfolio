@@ -8,13 +8,13 @@ export default function Projects({projects}) {
     return (
         <>
             <Layout>
-                <div className="flex flex-col items-center min-h-screen px-5 mb-10 px-6">
+                <div className="flex flex-col items-center min-h-screen px-5 mb-10">
                     <Head>
                         <title>김믿음 포트폴리오</title>
                         <meta name="description" content="김믿음 포트폴리오" />
                         <link rel="icon" href="/favicon.ico" />
                     </Head> 
-                    <h1 className="text-4xl font-blod sm:text-6xl">
+                    <h1 className="text-4xl font-bold sm:text-6xl">
                         총 프로젝트 : 
                         <span className="pl-4 text-blue-500">{projects.results.length}</span>
                     </h1>
