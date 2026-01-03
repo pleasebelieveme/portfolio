@@ -26,7 +26,7 @@ export async function getStaticProps() {
     const options = {
         method: "POST",
         headers: {
-            Aceept: 'application/json',
+            Accept: 'application/json',
             'Notion-Version': '2022-02-22',
             'Content-type': 'application/json',
             Authorization: `Bearer ${NOTION_TOKEN_ID}`
